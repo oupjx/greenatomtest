@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+             <img src="img/book.png" width="50" height="50">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                  <li class="nav-item " >
+                    <span class="nav-link active " aria-current="page" href="#">BestBook</span>
+                  </li>
+                  <li class="nav-item rightFavorite" >
+                    <a class="nav-link active rigt" aria-current="page" href="#">Favorites</a>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<div class="search">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <form class="d-flex">
+                <input class="form-control me-2 " id="searchInput" type="search" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+            
+            <ul class="spisok">
+              <button type="button" id="clickpl">SortUp</button>
+            <button type="button" id="clickrt">SortobrDown</button>
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle isdat_btn" data-bs-toggle="dropdown" aria-expanded="false">
+                  Издательство
+                </button>
+                <ul class="dropdown-menu list_isdat">
+                  
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Год
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <label  class="inputValue"></label>
+                    <input type="range" class="form-range" min="2010" max="2021" id="customRange2" >
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Автор
+                </button>
+                <ul class="dropdown-menu">
+                  <div class="container-fluid">
+                  <form class="d-flex ">
+                    <input class="form-control me-2 " id="searchInputAuthor" type="search" placeholder="Поиск" aria-label="Search">
+                 
+                  </form>
+                  </div>
+                </ul>
+              </div>
+            </ul>  
+            </nav>
+          </div>
+    
+    
+       
+          
+
+        <div class="table_book ">
+            <div class="row">
+            <div class="card-group ">
+            </div>
+          </div>
+
+
+           
+          
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

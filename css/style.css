@@ -1,0 +1,36 @@
+body{
+    overflow-x:hidden;
+}
+.rightFavorite{
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+    
+}
+.spisok{
+    position: absolute;
+    right: 0;
+    padding-right: 100px;
+ 
+   
+}
+
+.color{
+    color: rgba(0,0,0,.9);
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+.card-group>.card {
+    flex: none;
+    margin-bottom: 50px;
+    width: 250px;
+
+}
+.hide{
+    display: none;
+}
